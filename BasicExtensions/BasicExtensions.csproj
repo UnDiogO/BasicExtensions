@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.3</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>Utils.BasicExtensions</PackageId>
+    <Authors>diogosapessoa</Authors>
+    <Description>A group of extensions in C# for .NET Standard</Description>
+    <PackageTags>c# extensions netstandard</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netstandard2.0\BasicExtensions.xml</DocumentationFile>
+  </PropertyGroup>
+
+</Project>
