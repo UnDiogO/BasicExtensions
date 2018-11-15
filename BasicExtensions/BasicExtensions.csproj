@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.3</TargetFramework>
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>Utils.BasicExtensions</PackageId>
     <Authors>DiogoLeao</Authors>
     <Description>A group of extensions in C# for .NET Standard</Description>
