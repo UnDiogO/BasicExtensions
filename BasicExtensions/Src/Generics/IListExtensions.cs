@@ -4,15 +4,16 @@ using System.Collections.Generic;
 namespace BasicExtensions
 {
     /// <summary>
-    /// To be added.
+    /// Class with extensions to IList
     /// </summary>
     public static class IListExtensions
     {
         /// <summary>
-        /// To be added.
+        /// Remove a random element
         /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="collection"></param>
+        /// <typeparam name="T">Type of collection items</typeparam>
+        /// <param name="collection">Collection to be evaluated</param>
+        /// <exception cref="NullReferenceException"></exception>
         public static void RemoveRandElement<T>(this IList<T> collection)
         {
             var rand = new Random();

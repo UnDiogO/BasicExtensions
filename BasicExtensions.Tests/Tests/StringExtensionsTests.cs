@@ -136,9 +136,9 @@ namespace BasicExtensions.Tests
             Assert.AreEqual(expected, value?.ToTitleCase());
 
         [DataTestMethod]
-        [DataRow("hello world!", 10, "hello worl")]
-        [DataRow("hello world!", 2, "he")]
-        [DataRow("hello world!", 8, "hello wo")]
+        [DataRow("hello world!", 10, "hello worl…")]
+        [DataRow("hello world!", 2, "he…")]
+        [DataRow("hello world!", 8, "hello wo…")]
         public void Truncate(string value, int maxLength, string expected) =>
             Assert.AreEqual(expected, value?.Truncate(maxLength));
     }

@@ -4,23 +4,26 @@ using System.Globalization;
 namespace BasicExtensions
 {
     /// <summary>
-    /// To be added.
+    /// Class with extensions to DateTime
     /// </summary>
     public static class DateTimeExtensions
     {
         /// <summary>
-        /// To be added.
+        /// Indicates whether the current <see cref="DateTime"/> is weekend
         /// </summary>
-        /// <param name="value"></param>
-        /// <returns></returns>
+        /// <param name="value"><see cref="DateTime"/> to be evaluated</param>
+        /// <returns>Return true whether the current <see cref="DateTime"/> is weekend</returns>
         public static bool IsWeekend(this DateTime value) => 
             value.DayOfWeek == DayOfWeek.Saturday || value.DayOfWeek == DayOfWeek.Sunday;
 
         /// <summary>
-        /// To be added.
+        /// Converts the value of the current <see cref="DateTime"/> object to its equivalent iso string representation
         /// </summary>
-        /// <param name="value"></param>
-        /// <returns></returns>
+        /// <remarks>Format: yyyy-MM-dd HH:mm:ss</remarks>
+        /// <param name="value"><see cref="DateTime"/> to be evaluated</param>
+        /// <exception cref="FormatException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <returns>Return the value of the current <see cref="DateTime"/> object to its equivalent iso string representation</returns>
         public static string ToStringIso(this DateTime value) => 
             value.ToString("yyyy-MM-dd HH:mm:ss", CultureInfo.InvariantCulture);
     }

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace BasicExtensions.Tests
+﻿namespace BasicExtensions.Tests
 {
     /// <summary>
     /// To be added.

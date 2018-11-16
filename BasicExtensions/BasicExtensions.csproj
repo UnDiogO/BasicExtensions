@@ -10,10 +10,20 @@
     <PackageLicenseUrl>https://raw.githubusercontent.com/UnDiogO/BasicExtensions/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/UnDiogO/BasicExtensions</PackageProjectUrl>
     <Company />
+    <Version>1.0.1</Version>
+    <PackageReleaseNotes>Added xml documentation, 
+Removed try/catch in 'ToMd5' method, 
+Added ellipsis character in 'Truncate' method</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\netstandard2.0\BasicExtensions.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\netstandard1.3\BasicExtensions.xml</DocumentationFile>
+    <NoWarn>1701;1702;1574</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard1.3\BasicExtensions.xml</DocumentationFile>
+    <NoWarn>1701;1702;1574</NoWarn>
   </PropertyGroup>
 
 </Project>
