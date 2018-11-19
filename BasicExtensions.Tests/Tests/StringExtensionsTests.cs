@@ -105,6 +105,14 @@ namespace BasicExtensions.Tests
         }
 
         [TestMethod]
+        [DataRow("A", EnumFoo.A)]
+        [DataRow("B", EnumFoo.B)]
+        [DataRow("C", EnumFoo.C)]
+        public void ToEnum(string value, EnumFoo expected) =>
+            Assert.AreEqual(value.ToEnum<EnumFoo>(), expected);
+
+
+        [TestMethod]
         public void ToGuid()
         {
             var value = "8cbcdfa1-a6fb-4abb-ae33-af9a241dfb1c";

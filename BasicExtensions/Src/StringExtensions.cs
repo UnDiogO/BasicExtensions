@@ -134,6 +134,18 @@ namespace BasicExtensions
             DateTime.Parse(value);
 
         /// <summary>
+        /// Convert to <see cref="Enum"/>
+        /// </summary>
+        /// <typeparam name="TEnum">Type of <see cref="Enum"/></typeparam>
+        /// <param name="value"><see cref="string"/> to be converted</param>
+        /// <exception cref="ArgumentException"></exception>
+        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="OverflowException"></exception>
+        /// <returns>Return a <see cref="Enum"/> converted from a <see cref="string"/></returns>
+        public static TEnum ToEnum<TEnum>(this string value) where TEnum : struct, IComparable, IConvertible, IFormattable =>
+            (TEnum)Enum.Parse(typeof(TEnum), value);
+
+        /// <summary>
         /// Convert to <see cref="Guid"/>
         /// </summary>
         /// <param name="value"><see cref="string"/> to be converted</param>

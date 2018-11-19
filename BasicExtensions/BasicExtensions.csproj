@@ -10,10 +10,10 @@
     <PackageLicenseUrl>https://raw.githubusercontent.com/UnDiogO/BasicExtensions/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/UnDiogO/BasicExtensions</PackageProjectUrl>
     <Company />
-    <Version>1.0.1</Version>
-    <PackageReleaseNotes>Added xml documentation, 
-Removed try/catch in 'ToMd5' method, 
-Added ellipsis character in 'Truncate' method</PackageReleaseNotes>
+    <Version>1.0.2</Version>
+    <PackageReleaseNotes>Added method 'AddIfNotContains&lt;T&gt;' to 'ICollection'
+Added method 'ToInt' to 'Enum'
+Added method 'ToEnum&lt;TEnum&gt;' to 'string'</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

@@ -10,6 +10,23 @@ namespace BasicExtensions
     public static class ICollectionExtensions
     {
         /// <summary>
+        /// Add an item to the <see cref="ICollection{T}"/> if it's not already in the collection
+        /// </summary>
+        /// <typeparam name="T">Type of collection item</typeparam>
+        /// <param name="collection">Collection to be evaluated</param>
+        /// <param name="item">Item to check and add</param>
+        /// <returns>Returns True if added, returns False if not</returns>
+        public static bool AddIfNotContains<T>(this ICollection<T> collection, T item)
+        {
+            if (collection.Contains(item))
+            {
+                return false;
+            }
+            collection.Add(item);
+            return true;
+        }
+
+        /// <summary>
         /// Indicates whether the current <see cref="ICollection{T}"/> is null or an Empty collection
         /// </summary>
         /// <param name="collection">Collection to be evaluated</param>
